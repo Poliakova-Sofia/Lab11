@@ -1,3 +1,17 @@
+#include "MyForm.h" // including a header file containing a description of the MyForm class
+// connect namespace
+using namespace System;
+using namespace System::Windows::Forms;
+// attribute indicating that the application's main thread is using the single-threaded apartment (STA) model
+[STAThreadAttribute] 
+int main(array<String^>^ args) { // main function of the application, takes an array of command line arguments				
+	Application::SetCompatibleTextRenderingDefault(false); // sets default text processing compatibility to display text correctly
+	Application::EnableVisualStyles(); //// enables support for visual styles for the application (design of controls)     
+	LRintDivision::MyForm form; //// create an object of the MyForm
+	Application::Run(% form); // launch the application using the form object passed by reference
+}
+
+
 #pragma once
 namespace LRintDivision {
 
