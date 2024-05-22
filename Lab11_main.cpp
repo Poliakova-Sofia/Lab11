@@ -193,7 +193,7 @@ namespace LRintDivision {
 		}
 		else {
                         // error message if the number is not three digits
-			MessageBox::Show(tb_num->Text + " is not three number digital! Error!(^_^)");
+			MessageBox::Show(tb_num->Text + " is not three-digital number! Error!(^_^)");
 			tb_num->Text = "";
 			tb_res->Text = "";
 			tb_num->Focus();
